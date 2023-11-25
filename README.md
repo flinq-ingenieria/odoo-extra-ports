@@ -14,3 +14,8 @@
 ## From OCA/purchase-workflow v16
 
 - purchase_no_rfq
+
+
+# Extra, non-OCA
+
+- web_window_title
