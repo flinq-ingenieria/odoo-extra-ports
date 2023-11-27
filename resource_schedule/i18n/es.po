@@ -1,0 +1,1543 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* resource_schedule
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar__dayoff_type
+#, fuzzy
+msgid ""
+"\n"
+"        Fixed for all - the unscheduled days in the working time apply to "
+"all resources.\n"
+"        Fixed individually - the days off will be specified in each "
+"resource's record. If\n"
+"        it is not, the default days off will be used.\n"
+"        Rolling weekly - each reasource's day(s) off changes on a weekly "
+"basis. For\n"
+"        example, if the resource was off on Saturday last week, this week it "
+"will be\n"
+"        Friday, and next week it will be Thursday.\n"
+"        "
+msgstr ""
+"\n"
+"Fijo para todos: los días no programados en el horario de trabajo se aplican "
+"a todos los recursos.\n"
+"        Fijo individualmente: los días libres se especificarán en el "
+"registro de cada recurso. Si\n"
+"        No lo es, se utilizarán los días libres predeterminados.\n"
+"        Semanal móvil: los días libres de cada recurso cambian semanalmente. "
+"Para\n"
+"        Por ejemplo, si el recurso estaba apagado el sábado de la semana "
+"pasada, esta semana será\n"
+"        Viernes, y la semana que viene será jueves.\n"
+"        "
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance__day_period__12day
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_open__day_period__12day
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_shift__day_period__12day
+#, fuzzy
+msgid "12 Hour Day"
+msgstr "Día de 12 horas"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance__day_period__12night
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_open__day_period__12night
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_shift__day_period__12night
+#, fuzzy
+msgid "12 Hour Night"
+msgstr "Noche de 12 horas"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance__day_period__8day
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_open__day_period__8day
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_shift__day_period__8day
+#, fuzzy
+msgid "8 Hour Day"
+msgstr "Día de 8 horas"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.res_config_settings_form
+#, fuzzy
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" role=\"img\" aria-label=\"Values set here are company-specific."
+"\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=“Los valores establecidos aquí "
+"son específicos de la empresa.” role=\"img\" aria-label=\"Los valores "
+"establecidos aquí son específicos de la empresa.\" groups=\"base."
+"group_multi_company\"/>"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__active
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__active
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__active
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__active
+#, fuzzy
+msgid "Active"
+msgstr "Activo"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.resource_calendar_form
+#, fuzzy
+msgid "Add a new week"
+msgstr "Añadir una nueva semana"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.resource_calendar_form
+#, fuzzy
+msgid "Add a workday"
+msgstr "Agregar un día de trabajo"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_template__day_period__afternoon
+#, fuzzy
+msgid "Afternoon"
+msgstr "Tarde"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_template__day_period__12day
+#, fuzzy
+msgid "All day"
+msgstr "Todo el día"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_template__day_period__12night
+#, fuzzy
+msgid "All night"
+msgstr "Toda la noche"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance__autopunch
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__autopunch
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_template__autopunch
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__autopunch
+#, fuzzy
+msgid "An attendance record will be created automatically for the resource."
+msgstr "Se creará automáticamente un registro de asistencia para el recurso."
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_attendance_template_form
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_area_form
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_area_search
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_form
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_search
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_team_form
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_team_search
+#, fuzzy
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_resource_search
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Area"
+msgstr "Área"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_hr_attendance
+#, fuzzy
+msgid "Attendance"
+msgstr "Asistencia"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__hr_attendance_ids
+#, fuzzy
+msgid "Attendance Records"
+msgstr "Registros de asistencia"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__autodeduct_break
+#, fuzzy
+msgid "Auto-deduct break"
+msgstr "Ruptura de deducción automática"
+
+#. module: resource_schedule
+#: code:addons/resource_schedule/models/resource_calendar_attendance_template.py:0
+#, fuzzy, python-format
+msgid "Auto-deduct break time cannot be used with a Flex Shift"
+msgstr ""
+"El tiempo de descanso de deducción automática no se puede usar con un Flex "
+"Shift"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_attendance__autopunch
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__autopunch
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__autopunch
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__autopunch
+#, fuzzy
+msgid "Auto-punch"
+msgstr "Punzonado automático"
+
+#. module: resource_schedule
+#: code:addons/resource_schedule/models/resource_calendar_attendance.py:0
+#: code:addons/resource_schedule/models/resource_calendar_attendance_template.py:0
+#, fuzzy, python-format
+msgid "Auto-punch cannot be used with a Flex Shift"
+msgstr "El punzonado automático no se puede usar con un Flex Shift"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__auto_splitshift
+#, fuzzy
+msgid "Automatically split shifts at midnight"
+msgstr "Dividir automáticamente los turnos a medianoche"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__autopunch
+#, fuzzy
+msgid "Autopunch"
+msgstr "Punzonado automático"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__available
+#, fuzzy
+msgid "Available"
+msgstr "Disponible"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__break_minutes
+#, fuzzy
+msgid "Break Minutes"
+msgstr "Minutos de descanso"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_calendar_weekday
+#, fuzzy
+msgid "Calendar Weekdays"
+msgstr "Calendario Días laborables"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__two_weeks_calendar
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__two_weeks_calendar
+#, fuzzy
+msgid "Calendar in 2 weeks mode"
+msgstr "Calendario en modo 2 semanas"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_department_selection
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_schedule_employee_selection
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_generate__type
+#, fuzzy
+msgid ""
+"Choose how to schedule shifts.Employee - Directly choose the employees for "
+"which to schedule shifts.Team - Shifts will be scheduled for all the "
+"employees in the team(s).Working Schedule - All employees (and teams) that "
+"have been assigned thatschedule will have shifts scheduled."
+msgstr ""
+"Elija cómo programar los turnos. Empleado: elija directamente los empleados "
+"para los que programar turnos. Equipo: se programarán turnos para todos los "
+"empleados de los equipos. Horario de trabajo: todos los empleados (y "
+"equipos) a los que se les ha asignado ese horario tendrán turnos programados."
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__color
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__color
+#, fuzzy
+msgid "Color Index"
+msgstr "Índice de color"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_res_company
+#, fuzzy
+msgid "Companies"
+msgstr "Compañias"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__company_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__company_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__company_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__company_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__company_id
+#, fuzzy
+msgid "Company"
+msgstr "Compañía"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_res_config_settings
+#, fuzzy
+msgid "Config Settings"
+msgstr "Opciones de onfiguración"
+
+#. module: resource_schedule
+#: model:ir.ui.menu,name:resource_schedule.menu_schedule_config
+#, fuzzy
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_attendance_template_form
+#, fuzzy
+msgid "Core Hours"
+msgstr "Horas centrales"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__create_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_validate_departments__create_uid
+#, fuzzy
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__create_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_validate_departments__create_date
+#, fuzzy
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Date"
+msgstr "Fecha"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__day
+#, fuzzy
+msgid "Day"
+msgstr "Día"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__day_period
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__day_period
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__day_period
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__day_period
+#, fuzzy
+msgid "Day Period"
+msgstr "Período de día"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__dayofweek
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__dayofweek
+#, fuzzy
+msgid "Day of Week"
+msgstr "Día de la Semana"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar__dayoff_type
+#, fuzzy
+msgid "Day off type"
+msgstr "Tipo de día libre"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday__dayofweek
+#, fuzzy
+msgid "Dayofweek"
+msgstr "Día de la semana"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar__default_dayoff_ids
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_resource__dayoff_ids
+#, fuzzy
+msgid "Days off"
+msgstr "Días libres"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__default_area_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__default_area_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__default_area_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__default_area_id
+#, fuzzy
+msgid "Default Area"
+msgstr "Área predeterminada"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_contract__default_area_id
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_employee__default_area_id
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_job__default_area_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_resource__default_area_id
+#, fuzzy
+msgid "Default shift area"
+msgstr "Área de desplazamiento predeterminada"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.res_config_settings_form
+#, fuzzy
+msgid "Defaults"
+msgstr "Predeterminados"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__department_id
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Department"
+msgstr "Departamento"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_schedule_validate_departments
+#, fuzzy
+msgid "Department Selection for Validation"
+msgstr "Selección de departamentos para validación"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_validate_departments__department_ids
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_department_selection
+#, fuzzy
+msgid "Departments"
+msgstr "Departamentos"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_department_selection
+#, fuzzy
+msgid "Departmet Selection"
+msgstr "Selección Departamental"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_hr_attendance__autopunch
+#, fuzzy
+msgid ""
+"Designates whether or not this attendance record was created automatically."
+msgstr "Designa si este registro de asistencia se creó automáticamente o no."
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_attendance__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_contract__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_job__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_leave__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_res_company__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_resource__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__display_name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_validate_departments__display_name
+#, fuzzy
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__display_type
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__display_type
+#, fuzzy
+msgid "Display Type"
+msgstr "Tipo de visualización"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__duration
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__duration
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__duration
+#, fuzzy
+msgid "Duration"
+msgstr "Duración"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance__duration
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__duration
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__duration
+#, fuzzy
+msgid "Duration of period in seconds"
+msgstr "Duración del período en segundos"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_hr_employee
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__employee_id
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_generate__type__employee
+#, fuzzy
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_hr_contract
+#, fuzzy
+msgid "Employee Contract"
+msgstr "Contrato del Empleado"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__employee_ids
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_schedule_employee_selection
+#, fuzzy
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__datetime_end
+#, fuzzy
+msgid "End"
+msgstr "Fin"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__date_to
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__date_to
+#, fuzzy
+msgid "End Date"
+msgstr "Fecha de fin"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance__day_period__evening
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_open__day_period__evening
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_template__day_period__evening
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_shift__day_period__evening
+#, fuzzy
+msgid "Evening"
+msgstr "Tarde Noche"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar__dayoff_type__fix_all
+#, fuzzy
+msgid "Fixed for all"
+msgstr "Fijo para todos"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar__dayoff_type__fix_one
+#, fuzzy
+msgid "Fixed individualy"
+msgstr "Fijo individualmente"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__flex_core_from
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__flex_core_from
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__flex_core_from
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__flex_core_from
+#, fuzzy
+msgid "Flex Core From"
+msgstr "Flex Core de"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__flex_core_to
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__flex_core_to
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__flex_core_to
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__flex_core_to
+#, fuzzy
+msgid "Flex Core To"
+msgstr "Núcleo flexible para"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__flex_scheduled_avg
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__flex_scheduled_avg
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__flex_scheduled_avg
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__flex_scheduled_avg
+#, fuzzy
+msgid "Flex Scheduled Avg"
+msgstr "Promedio programado flexible"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__flex_scheduled_hrs
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__flex_scheduled_hrs
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__flex_scheduled_hrs
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__flex_scheduled_hrs
+#, fuzzy
+msgid "Flex Scheduled Hrs"
+msgstr "Horario horario horario flexible"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance__shift_type__flex
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_open__shift_type__flex
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_template__shift_type__flex
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_shift__shift_type__flex
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_attendance_template_form
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_calendar_attendance_form
+#, fuzzy
+msgid "Flex Shift"
+msgstr "Cambio flexible"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__flex_weekly_hrs
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__flex_weekly_hrs
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__flex_weekly_hrs
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__flex_weekly_hrs
+#, fuzzy
+msgid "Flex Weekly Hrs"
+msgstr "Horas semanales flexibles"
+
+#. module: resource_schedule
+#: code:addons/resource_schedule/models/resource_calendar.py:0
+#, fuzzy, python-format
+msgid "Format of working hours is incorrect"
+msgstr "El formato de las horas de trabajo es incorrecto"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_schedule_employee_selection
+#, fuzzy
+msgid "Generate"
+msgstr "Generar"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.action_schedules_by_employee
+#: model:ir.ui.menu,name:resource_schedule.menu_schedules_by_employee
+#, fuzzy
+msgid "Generate Schedules"
+msgstr "Generar turnos"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_schedule_generate
+#, fuzzy
+msgid "Generate Schedules Wizard"
+msgstr "Asistente para generar programaciones"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__sequence
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__sequence
+#, fuzzy
+msgid "Gives the sequence of this line when displaying the resource calendar."
+msgstr ""
+"Proporciona la secuencia de esta línea al mostrar el calendario de recursos."
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_attendance_template_form
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_calendar_attendance_form
+#, fuzzy
+msgid "Hours"
+msgstr "Horas"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.res_config_settings_form
+#, fuzzy
+msgid "Hrs"
+msgstr "Hrs"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Human"
+msgstr "Humano"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_attendance__id
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_contract__id
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_employee__id
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_job__id
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_leave__id
+#: model:ir.model.fields,field_description:resource_schedule.field_res_company__id
+#: model:ir.model.fields,field_description:resource_schedule.field_res_config_settings__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_resource__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_validate_departments__id
+#, fuzzy
+msgid "ID"
+msgstr "ID"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.res_config_settings_form
+#, fuzzy
+msgid ""
+"If an employee hasn't clocked out in this amount of time the system will "
+"automatically clock the employee out."
+msgstr ""
+"Si un empleado no ha fichado la salida en esta cantidad de tiempo, el "
+"sistema marcará automáticamente la salida del empleado."
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance__flex_scheduled_avg
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__flex_scheduled_avg
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_template__flex_scheduled_avg
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__flex_scheduled_avg
+#, fuzzy
+msgid ""
+"If this option is checked scheduled hours denotes a daily averageover a "
+"period of one week."
+msgstr ""
+"Si esta opción está marcada, las horas programadas denotan un promedio "
+"diario durante un período de una semana."
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance__flex_weekly_hrs
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__flex_weekly_hrs
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_template__flex_weekly_hrs
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__flex_weekly_hrs
+#, fuzzy
+msgid ""
+"If this value is set the resource must work this number ofhours total during "
+"the week."
+msgstr ""
+"Si se establece este valor, el recurso debe trabajar este número de horas en "
+"total durante la semana."
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_team__start_week
+#, fuzzy
+msgid ""
+"In multi-week schedule rotation this denotes the week number onwhich this "
+"team will start the rotation. In single week schedules leavethis value at 0."
+msgstr ""
+"En la rotación de horarios de varias semanas, esto denota el número de "
+"semana en el que este equipo comenzará la rotación. En los horarios de una "
+"sola semana, deje este valor en 0."
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_hr_job
+#, fuzzy
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_attendance____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_contract____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_job____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_leave____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_res_company____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_resource____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team____last_update
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_validate_departments____last_update
+#, fuzzy
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__write_uid
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_validate_departments__write_uid
+#, fuzzy
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__write_date
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_validate_departments__write_date
+#, fuzzy
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__manager_ids
+#: model:res.groups,name:resource_schedule.group_scheduling_manager
+#, fuzzy
+msgid "Manager"
+msgstr "Gerente"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_form
+#, fuzzy
+msgid "Managers"
+msgstr "Administradores"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Material"
+msgstr "Material"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_res_config_settings__max_shift_length
+#, fuzzy
+msgid "Maximum Shift Length"
+msgstr "Longitud máxima del turno"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_template__day_period__morning
+#, fuzzy
+msgid "Morning"
+msgstr "Mañana"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "My Area"
+msgstr "Mi área"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "My Department"
+msgstr "Mi Departamento"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_dept_schedule_view
+#: model:ir.ui.menu,name:resource_schedule.menu_dept_schedule_view
+#, fuzzy
+msgid "My Department Schedule"
+msgstr "Horario de Mi Departamento"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_my_schedule_view
+#: model:ir.ui.menu,name:resource_schedule.menu_my_schedule_view
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "My Schedule"
+msgstr "Mi Horario"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "My Team"
+msgstr "Mi Equipo"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_team_schedule_view
+#: model:ir.ui.menu,name:resource_schedule.menu_team_schedule_view
+#, fuzzy
+msgid "My Team Schedule"
+msgstr "Horario de mi equipo"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_weekday__name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__name
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__name
+#, fuzzy
+msgid "Name"
+msgstr "Nombre"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__no_weeks
+#, fuzzy
+msgid "Number of weeks"
+msgstr "Número de semanas"
+
+#. module: resource_schedule
+#: model:ir.ui.menu,name:resource_schedule.menu_schedule_ops
+#, fuzzy
+msgid "Operations"
+msgstr "Operaciones"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__published
+#, fuzzy
+msgid "Publish"
+msgstr "Publicar"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.action_schedules_by_department
+#: model:ir.ui.menu,name:resource_schedule.menu_schedules_generate
+#, fuzzy
+msgid "Publish Schedules"
+msgstr "Publicar turnos"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__record_ids
+#, fuzzy
+msgid "Record"
+msgstr "Grabar"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_autopunch_lastrun__record_count
+#, fuzzy
+msgid "Record Count"
+msgstr "Recuento de registros"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__resource_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__resource_ids
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__resource_id
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Resource"
+msgstr "Recurso"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_area__resource_count
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__resource_count
+#, fuzzy
+msgid "Resource Count"
+msgstr "Recuento de recursos"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_calendar_attendance_open
+#, fuzzy
+msgid "Resource Open Shift Template"
+msgstr "Plantilla de turno abierto de recursos"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_area_search
+#, fuzzy
+msgid "Resource Scheduling Area Search"
+msgstr "Búsqueda en el área de programación de recursos"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_schedule_group
+#, fuzzy
+msgid "Resource Scheduling Group"
+msgstr "Grupo de programación de recursos"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_search
+#, fuzzy
+msgid "Resource Scheduling Group Search"
+msgstr "Búsqueda de grupos de programación de recursos"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_team_search
+#, fuzzy
+msgid "Resource Scheduling Team Search"
+msgstr "Búsqueda de equipos de programación de recursos"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_schedule_shift
+#, fuzzy
+msgid "Resource Shift"
+msgstr "Desplazamiento de recursos"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Resource Shift Search"
+msgstr "Búsqueda de cambio de recursos"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__resource_type
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__resource_type
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__resource_type
+#, fuzzy
+msgid "Resource Type"
+msgstr "Tipo de recurso"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_calendar
+#, fuzzy
+msgid "Resource Working Time"
+msgstr "Horario de trabajo de recursos"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__calendar_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__calendar_id
+#, fuzzy
+msgid "Resource's Calendar"
+msgstr "Calendario del recurso"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_resource
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__resource_ids
+#: model:ir.ui.menu,name:resource_schedule.menu_resource_resource
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_team_form
+#, fuzzy
+msgid "Resources"
+msgstr "Recursos humanos"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar__dayoff_type__rolling
+#, fuzzy
+msgid "Rolling weekly"
+msgstr "Rolling semanal"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_employee_schedule_view
+#: model:ir.ui.menu,name:resource_schedule.menu_root_schedule
+#: model:ir.ui.menu,name:resource_schedule.menu_schedule_schedule
+#, fuzzy
+msgid "Schedule"
+msgstr "Turnos"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__schedule_group_ids
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__schedule_group_ids
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__schedule_group_ids
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__schedule_group_ids
+#, fuzzy
+msgid "Schedule Group"
+msgstr "Programar turnos grupo"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_schedule_employee_selection
+#, fuzzy
+msgid "Schedule Shifts"
+msgstr "Programar turnos"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_schedule_autopunch_lastrun
+#, fuzzy
+msgid "Schedule auto-punch last run-time"
+msgstr "Programar el fichaje automático de salida"
+
+#. module: resource_schedule
+#: model:ir.actions.server,name:resource_schedule.autopunch_schedule_cron_ir_actions_server
+#: model:ir.cron,cron_name:resource_schedule.autopunch_schedule_cron
+#: model:ir.cron,name:resource_schedule.autopunch_schedule_cron
+#, fuzzy
+msgid "Schedule: Auto-punch"
+msgstr "Programación: Fichaje automático"
+
+#. module: resource_schedule
+#: model:ir.actions.server,name:resource_schedule.auto_clockout_schedule_cron_ir_actions_server
+#: model:ir.cron,cron_name:resource_schedule.auto_clockout_schedule_cron
+#: model:ir.cron,name:resource_schedule.auto_clockout_schedule_cron
+#, fuzzy
+msgid "Schedule: Automatically clock-out after max. shift length"
+msgstr ""
+"Programación: Salida automática después de la duración máxima del turno"
+
+#. module: resource_schedule
+#: model:ir.actions.server,name:resource_schedule.mass_schedule_cron_ir_actions_server
+#: model:ir.cron,cron_name:resource_schedule.mass_schedule_cron
+#: model:ir.cron,name:resource_schedule.mass_schedule_cron
+#, fuzzy
+msgid "Schedule: Mass Scheduling"
+msgstr "Horario: Programación masiva"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_employee__scheduled_shift_ids
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_resource__scheduled_shift_ids
+#, fuzzy
+msgid "Scheduled Shift"
+msgstr "Turno programado"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__scheduled_shift_ids
+#, fuzzy
+msgid "Scheduled Shifts"
+msgstr "Turnos programados"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.hr_employee_view_form
+#, fuzzy
+msgid "Schedules"
+msgstr "Horarios"
+
+#. module: resource_schedule
+#: model:ir.module.category,name:resource_schedule.module_category_scheduling
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_shift_calendar
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_shift_form
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_shift_tree
+#, fuzzy
+msgid "Scheduling"
+msgstr "Programando"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_schedule_area_view
+#: model:ir.model,name:resource_schedule.model_resource_schedule_area
+#: model:ir.ui.menu,name:resource_schedule.menu_schedule_area_view
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_area_form
+#, fuzzy
+msgid "Scheduling Area"
+msgstr "Lugares de trabajo"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_area_tree
+#, fuzzy
+msgid "Scheduling Areas"
+msgstr "Puestos de trabajo"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_schedule_group_view
+#: model:ir.ui.menu,name:resource_schedule.menu_schedule_group_view
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_form
+#, fuzzy
+msgid "Scheduling Group"
+msgstr "Trabajo por equipos"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_form
+#, fuzzy
+msgid "Scheduling Group Managers"
+msgstr "Programación de Gerentes de Grupo"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_form
+#, fuzzy
+msgid "Scheduling Group Work Detail Templates"
+msgstr "Plantillas de detalles de trabajo en grupo de programación"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_attendance_template_form
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_tree
+#, fuzzy
+msgid "Scheduling Groups"
+msgstr "Programación de grupos"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_schedule_team
+#, fuzzy
+msgid "Scheduling Shift Team"
+msgstr "Programación del equipo de turnos"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_team_form
+#, fuzzy
+msgid "Scheduling Team"
+msgstr "Equipo de programación"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_schedule_team_view
+#: model:ir.ui.menu,name:resource_schedule.menu_schedule_team_view
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_team_tree
+#, fuzzy
+msgid "Scheduling Teams"
+msgstr "Programación de equipos"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_employee__schedule_group_id
+#, fuzzy
+msgid "Scheduling group"
+msgstr "Grupo de programación"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__sequence
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__sequence
+#, fuzzy
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.action_config_settings
+#: model:ir.ui.menu,name:resource_schedule.menu_config_settings
+#, fuzzy
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_hr_attendance__schedule_shift_id
+#, fuzzy
+msgid "Shift"
+msgstr "Cambio"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_shift_form
+#, fuzzy
+msgid "Shift Information"
+msgstr "Información de turnos"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.res_config_settings_form
+#, fuzzy
+msgid "Shift Scheduling"
+msgstr "Programación de turnos"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__shift_type
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__shift_type
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__shift_type
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__shift_type
+#, fuzzy
+msgid "Shift Type"
+msgstr "Tipo de turno"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_timeline
+#, fuzzy
+msgid "Shift hours"
+msgstr "Horas de turno"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_resource__schedule_team_id
+#, fuzzy
+msgid "Shift team"
+msgstr "Equipo de turno"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__span_midnight
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__span_midnight
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__span_midnight
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__span_midnight
+#, fuzzy
+msgid "Span Midnight"
+msgstr "Envergadura de medianoche"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_template__shift_type__std
+#, fuzzy
+msgid "Standard"
+msgstr "Estándar"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance__shift_type__std
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_open__shift_type__std
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_shift__shift_type__std
+#, fuzzy
+msgid "Standard Shift"
+msgstr "Turno estándar"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__date_start
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__datetime_start
+#, fuzzy
+msgid "Start"
+msgstr "Inicio"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__start_week
+#, fuzzy
+msgid "Start Week"
+msgstr "Comenzar la semana"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__hour_from
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__hour_from
+#, fuzzy
+msgid ""
+"Start and End time of working.\n"
+"A specific value of 24:00 is interpreted as 23:59:59.999999."
+msgstr ""
+"Hora de inicio y finalización del trabajo.\n"
+"Un valor específico de 24:00 se interpreta como 23:59:59.999999."
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__date_from
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__date_from
+#, fuzzy
+msgid "Starting Date"
+msgstr "Fecha de Inicio"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.resource_calendar_form
+#, fuzzy
+msgid "Switch to multi-week calendar"
+msgstr "Cambiar a un calendario de varias semanas"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__schedule_team_id
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_generate__type__team
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Team"
+msgstr "Equipo"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__schedule_team_ids
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_schedule_employee_selection
+#, fuzzy
+msgid "Teams"
+msgstr "Equipos"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__display_type
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__display_type
+#, fuzzy
+msgid "Technical field for UX purpose."
+msgstr "Campo técnico para propósitos UX."
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__template_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__template_id
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__template_id
+#, fuzzy
+msgid "Template"
+msgstr "Plantilla"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__template_count
+#, fuzzy
+msgid "Template Count"
+msgstr "Recuento de plantillas"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_template__break_minutes
+#, fuzzy
+msgid "The number of minutes to deduct for breaks from the scheduled time."
+msgstr ""
+"El número de minutos que se van a deducir de la hora programada para los "
+"descansos."
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__available
+#, fuzzy
+msgid "The number of shifts available for pickup."
+msgstr "El número de turnos disponibles para recoger."
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance__flex_scheduled_hrs
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__flex_scheduled_hrs
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__flex_scheduled_hrs
+#, fuzzy
+msgid "The resource must work this number of hours per day."
+msgstr "El recurso debe trabajar este número de horas al día."
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_hr_attendance__schedule_shift_id
+#, fuzzy
+msgid "The shift related to this attendance."
+msgstr "El cambio se relacionó con esta asistencia."
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance__week_nbr
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__week_nbr
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__week_nbr
+#, fuzzy
+msgid "The week number in the weekly rotation"
+msgstr "El número de semana en la rotación semanal"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__tz
+#, fuzzy
+msgid ""
+"This field is used in order to define in which timezone the resources will "
+"work."
+msgstr ""
+"Este campo se utiliza para definir en qué zona horaria funcionarán los "
+"recursos."
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance__span_midnight
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_open__span_midnight
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_template__span_midnight
+#: model:ir.model.fields,help:resource_schedule.field_resource_schedule_shift__span_midnight
+#, fuzzy
+msgid "This shift crosses over midnight into a new day."
+msgstr "Este cambio cruza la medianoche a un nuevo día."
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_hr_leave
+#, fuzzy
+msgid "Time Off"
+msgstr "Ausencias"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__tz
+#, fuzzy
+msgid "Timezone"
+msgstr "Zona horaria"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_search
+#, fuzzy
+msgid "Today"
+msgstr "Hoy"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__type
+#, fuzzy
+msgid "Type"
+msgstr "Tipo"
+
+#. module: resource_schedule
+#: model:res.groups,name:resource_schedule.group_scheduling_user
+#, fuzzy
+msgid "User"
+msgstr "Usuario"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_department_selection
+#, fuzzy
+msgid "Validate All"
+msgstr "Validar todo"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_department_selection
+#, fuzzy
+msgid "View Schedules"
+msgstr "Ver los Programas"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance__week_nbr
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__week_nbr
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__week_nbr
+#, fuzzy
+msgid "Week"
+msgstr "Semana"
+
+#. module: resource_schedule
+#: code:addons/resource_schedule/models/resource_calendar.py:0
+#, fuzzy, python-format
+msgid "Week 0"
+msgstr "Semana 0"
+
+#. module: resource_schedule
+#: code:addons/resource_schedule/models/resource_calendar.py:0
+#, fuzzy, python-format
+msgid "Week 1"
+msgstr "Semana 1"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_calendar_weekday_tree
+#, fuzzy
+msgid "Week Days"
+msgstr "Días de semana"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__week_type
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__week_type
+#, fuzzy
+msgid "Week Even/Odd"
+msgstr "Semana Par/Impar"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_calendar_weekday_form
+#, fuzzy
+msgid "Weekday"
+msgstr "Día laboral"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_calendar_weekday_view
+#: model:ir.ui.menu,name:resource_schedule.menu_calendar_weekday_view
+#, fuzzy
+msgid "Weekdays"
+msgstr "Días de la semana"
+
+#. module: resource_schedule
+#: model:ir.model.fields,help:resource_schedule.field_resource_calendar_attendance_template__auto_splitshift
+#, fuzzy
+msgid ""
+"When a shift crosses over into a new calendar day close out thecurrent shift "
+"and start a new shift."
+msgstr ""
+"Cuando un turno se cruza con un nuevo día calendario, cierre el turno actual "
+"y comience un nuevo turno."
+
+#. module: resource_schedule
+#: code:addons/resource_schedule/models/resource_schedule_shift.py:0
+#, fuzzy, python-format
+msgid "While creating schedules end date cannot be less than start date."
+msgstr ""
+"Al crear programaciones, la fecha de finalización no puede ser menor que la "
+"fecha de inicio."
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_shift_form
+#, fuzzy
+msgid "Work Area"
+msgstr "Área de trabajo"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_shift_form
+#, fuzzy
+msgid "Work Calendar"
+msgstr "Calendario de trabajo"
+
+#. module: resource_schedule
+#: model:ir.model,name:resource_schedule.model_resource_calendar_attendance
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_shift_form
+#, fuzzy
+msgid "Work Detail"
+msgstr "Detalle de la obra"
+
+#. module: resource_schedule
+#: model:ir.actions.act_window,name:resource_schedule.open_attendance_template_view
+#: model:ir.model,name:resource_schedule.model_resource_calendar_attendance_template
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_group__attendance_template_ids
+#: model:ir.ui.menu,name:resource_schedule.menu_attendance_template_view
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_attendance_template_form
+#, fuzzy
+msgid "Work Detail Template"
+msgstr "Plantilla de detalles de trabajo"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_attendance_template_tree
+#: model_terms:ir.ui.view,arch_db:resource_schedule.view_resource_schedule_group_form
+#, fuzzy
+msgid "Work Detail Templates"
+msgstr "Plantillas de detalles de trabajo"
+
+#. module: resource_schedule
+#: model_terms:ir.ui.view,arch_db:resource_schedule.resource_calendar_form
+#, fuzzy
+msgid "Work Details"
+msgstr "Detalles de la obra"
+
+#. module: resource_schedule
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_calendar_attendance_template__day_period__8day
+#, fuzzy
+msgid "Work day"
+msgstr "Jornada laboral"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__hour_from
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__hour_from
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__hour_from
+#, fuzzy
+msgid "Work from"
+msgstr "Trabaja desde"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_open__hour_to
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_calendar_attendance_template__hour_to
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_shift__hour_to
+#, fuzzy
+msgid "Work to"
+msgstr "Trabaja hasta"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_generate__resource_calendar_id
+#: model:ir.model.fields.selection,name:resource_schedule.selection__resource_schedule_generate__type__calendar
+#, fuzzy
+msgid "Working Schedule"
+msgstr "Planificador de trabajo"
+
+#. module: resource_schedule
+#: model:ir.model.fields,field_description:resource_schedule.field_resource_schedule_team__resource_calendar_id
+#: model:ir.ui.menu,name:resource_schedule.menu_resource_calendar
+#, fuzzy
+msgid "Working Times"
+msgstr "Horarios de trabajo"
+
+#. module: resource_schedule
+#: model:res.groups,comment:resource_schedule.group_scheduling_manager
+#, fuzzy
+msgid "the user will be able to configure the scheduling module"
+msgstr "El usuario podrá configurar el módulo de programación"
+
+#. module: resource_schedule
+#: model:res.groups,comment:resource_schedule.group_scheduling_user
+#, fuzzy
+msgid ""
+"the user will be able to create shifts, shift templates, and assign users"
+msgstr "El usuario podrá crear turnos, plantillas de turnos y asignar usuarios"

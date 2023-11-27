@@ -1,4 +1,4 @@
-# Unofficial, non complying Odoo OCA modules ported to Odoo 15.0
+# Unofficial, non complying Odoo modules ported to Odoo 15.0
 
 ## From OCA/edi v14
 
@@ -15,7 +15,11 @@
 
 - purchase_no_rfq
 
+## From https://github.com/trevi-software/trevi-hr v14
 
-# Extra, non-OCA
+- resource_schedule
+
+## Extra, non-port
+### From https://github.com/surenjie/renjie_odoo_addons 
 
 - web_window_title
