@@ -15,6 +15,10 @@
 
 - purchase_no_rfq
 
+## From OCA/account-budgeting v16
+
+- account_budget_oca
+
 ## From trevi-software/trevi-hr v14
 
 - resource_schedule
