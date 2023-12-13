@@ -1,0 +1,220 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_alias
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 17:22+0000\n"
+"PO-Revision-Date: 2023-12-13 18:26+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias__action
+#, fuzzy
+msgid "Action"
+msgstr "Acción"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__active
+#, fuzzy
+msgid "Active"
+msgstr "Activo"
+
+#. module: product_alias
+#: code:addons/product_alias/wizards/assign_product_alias.py:0
+#: model:ir.model.fields.selection,name:product_alias.selection__assign_alias__action__add
+#, fuzzy, python-format
+msgid "Add Aliases"
+msgstr "Agregar alias"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_product_product__product_alias_string
+#: model:ir.model.fields,field_description:product_alias.field_product_template__product_alias_string
+#, fuzzy
+msgid "Alias String"
+msgstr "Cadena de alias"
+
+#. module: product_alias
+#: model_terms:ir.ui.view,arch_db:product_alias.product_template_form_view
+#, fuzzy
+msgid "Aliases"
+msgstr "Alias"
+
+#. module: product_alias
+#: model_terms:ir.ui.view,arch_db:product_alias.view_product_alias_form
+#, fuzzy
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: product_alias
+#: model_terms:ir.ui.view,arch_db:product_alias.assign_product_alias_form
+#, fuzzy
+msgid "Assign"
+msgstr "Asignar"
+
+#. module: product_alias
+#: model:ir.actions.act_window,name:product_alias.product_product_assign_alias_action
+#: model:ir.actions.act_window,name:product_alias.product_template_assign_alias_action
+#: model_terms:ir.ui.view,arch_db:product_alias.assign_product_alias_form
+#, fuzzy
+msgid "Assign Aliases"
+msgstr "Asignar alias"
+
+#. module: product_alias
+#: model:ir.model,name:product_alias.model_assign_alias
+#, fuzzy
+msgid "Assign Product Alias"
+msgstr "Asignar alias de producto"
+
+#. module: product_alias
+#: model_terms:ir.ui.view,arch_db:product_alias.assign_product_alias_form
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias__create_uid
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__create_uid
+#, fuzzy
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias__create_date
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__create_date
+#, fuzzy
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias__display_name
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__display_name
+#, fuzzy
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias__id
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__id
+#, fuzzy
+msgid "ID"
+msgstr "ID"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias____last_update
+#: model:ir.model.fields,field_description:product_alias.field_product_alias____last_update
+#, fuzzy
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias__write_uid
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__write_uid
+#, fuzzy
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias__write_date
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__write_date
+#, fuzzy
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__name
+#, fuzzy
+msgid "Name"
+msgstr "Nombre"
+
+#. module: product_alias
+#: model:ir.model,name:product_alias.model_product_product
+#, fuzzy
+msgid "Product"
+msgstr "Producto"
+
+#. module: product_alias
+#: model:ir.actions.act_window,name:product_alias.product_alias_action
+#: model:ir.model,name:product_alias.model_product_alias
+#: model_terms:ir.ui.view,arch_db:product_alias.view_product_alias_form
+#: model_terms:ir.ui.view,arch_db:product_alias.view_product_alias_tree
+#, fuzzy
+msgid "Product Alias"
+msgstr "Alias del Producto"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_product_product__product_alias_ids
+#: model:ir.model.fields,field_description:product_alias.field_product_template__product_alias_ids
+#: model:ir.ui.menu,name:product_alias.menu_product_alias
+#, fuzzy
+msgid "Product Aliases"
+msgstr "Alias de producto"
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_product_alias__product_count
+#, fuzzy
+msgid "Product Count"
+msgstr "Cantidad de productos"
+
+#. module: product_alias
+#: model:ir.model,name:product_alias.model_product_template
+#, fuzzy
+msgid "Product Template"
+msgstr "Plantilla del producto"
+
+#. module: product_alias
+#: model_terms:ir.ui.view,arch_db:product_alias.view_product_alias_form
+#, fuzzy
+msgid "Products"
+msgstr "Productos"
+
+#. module: product_alias
+#: code:addons/product_alias/wizards/assign_product_alias.py:0
+#: model:ir.model.fields.selection,name:product_alias.selection__assign_alias__action__replace
+#, fuzzy, python-format
+msgid "Replace Aliases with selected ones"
+msgstr "Reemplazar alias por los seleccionados"
+
+#. module: product_alias
+#: model:ir.model.fields,help:product_alias.field_assign_alias__action
+#, fuzzy
+msgid ""
+"Select 'Add Aliases' if you want to add aliases to the existing Aliases. \n"
+"Select 'Replace' if you want to Replace all aliases with selected ones."
+msgstr ""
+"Seleccione 'Agregar alias' si desea agregar alias a los alias "
+"existentes. \n"
+"Seleccione 'Reemplazar' si desea reemplazar todos los alias con los "
+"seleccionados."
+
+#. module: product_alias
+#: model:ir.model.fields,field_description:product_alias.field_assign_alias__assign_product_alias_ids
+#, fuzzy
+msgid "Select Aliases"
+msgstr "Seleccionar alias"
+
+#. module: product_alias
+#: model:ir.model.fields,help:product_alias.field_product_product__product_alias_string
+#: model:ir.model.fields,help:product_alias.field_product_template__product_alias_string
+#, fuzzy
+msgid "Technical field used for searching purposes."
+msgstr "Campo técnico utilizado con fines de búsqueda."
+
+#. module: product_alias
+#: model:ir.model.constraint,message:product_alias.constraint_product_alias_name_uniq
+#, fuzzy
+msgid ""
+"There's already an alias with this name.You cannot create two aliases with "
+"the same name."
+msgstr ""
+"Ya hay un alias con este nombre. No se pueden crear dos alias con el mismo "
+"nombre."
