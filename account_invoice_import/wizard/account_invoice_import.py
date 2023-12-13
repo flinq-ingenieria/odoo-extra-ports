@@ -88,7 +88,8 @@ class AccountInvoiceImport(models.TransientModel):
         """This method must be inherited by additional modules with
         the same kind of logic as the account_statement_import_*
         modules"""
-        xml_files_dict = self.get_xml_files_from_pdf(file_data)
+        #xml_files_dict = self.get_xml_files_from_pdf(file_data) #avoid warning
+        xml_files_dict = self.env["pdf.helper"].pdf_get_xml_files(file_data)
         for xml_filename, xml_root in xml_files_dict.items():
             logger.info("Trying to parse XML file %s", xml_filename)
             parsed_inv = self.parse_xml_invoice(xml_root)
