@@ -46,7 +46,9 @@ class ProductTemplate(models.Model):
         string="Termination Notice type",
     )
     auto_renew_interval = fields.Integer(
-        default=1, string="Renew Every", help="Renew every (Days/Week/Month/Year)"
+        default=1,
+        string="Renew Every",
+        help="Renew every (Days/Week/Month/Year)",
     )
     auto_renew_rule_type = fields.Selection(
         [
@@ -66,7 +68,7 @@ class ProductTemplate(models.Model):
                 self.with_company(company).write(
                     {"property_contract_template_id": False}
                 )
-        super().write(vals)
+        return super().write(vals)
 
     @api.constrains("is_contract", "type")
     def _check_contract_product_type(self):

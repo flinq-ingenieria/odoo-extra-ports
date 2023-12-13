@@ -3,15 +3,19 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 from odoo.exceptions import ValidationError
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import SavepointCase
 
 
-class TestProductTemplate(TransactionCase):
+class TestProductTemplate(SavepointCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
         cls.env = cls.env(
-            context=dict(cls.env.context, tracking_disable=True, no_reset_password=True)
+            context=dict(
+                cls.env.context,
+                tracking_disable=True,
+                no_reset_password=True,
+            )
         )
         cls.service_product = cls.env.ref("product.product_product_1")
         cls.consu_product = cls.env.ref("product.product_product_5")

@@ -16,9 +16,11 @@ class SaleOrder(models.Model):
     @api.constrains("state")
     def _check_contact_is_not_terminated(self):
         for rec in self:
-            if rec.state not in ("sale", "done", "cancel") and rec.order_line.filtered(
-                "contract_id.is_terminated"
-            ):
+            if rec.state not in (
+                "sale",
+                "done",
+                "cancel",
+            ) and rec.order_line.filtered("contract_id.is_terminated"):
                 raise ValidationError(
                     _("You can't upsell or downsell a terminated contract")
                 )
@@ -92,8 +94,9 @@ class SaleOrder(models.Model):
                     raise ValidationError(
                         _(
                             "You must specify a contract "
-                            "template for '{}' product in '{}' company."
-                        ).format(order_line.product_id.name, rec.company_id.name)
+                            "template for '%(order_line.product_id.name)s' "
+                            "product in '%(rec.company_id.name)s' company."
+                        )
                     )
                 contract_templates |= contract_template
             for contract_template in contract_templates:

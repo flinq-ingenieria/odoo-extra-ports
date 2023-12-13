@@ -9,5 +9,6 @@ class ResCompany(models.Model):
     _inherit = "res.company"
 
     create_contract_at_sale_order_confirmation = fields.Boolean(
-        string="Automatically Create Contracts At Sale Order Confirmation", default=True
+        string="Automatically Create Contracts At Sale Order Confirmation",
+        default=True,
     )

@@ -6,15 +6,19 @@ from dateutil.relativedelta import relativedelta
 
 from odoo.exceptions import UserError, ValidationError
 from odoo.fields import Date
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import SavepointCase
 
 
-class TestSaleOrder(TransactionCase):
+class TestSaleOrder(SavepointCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
         cls.env = cls.env(
-            context=dict(cls.env.context, tracking_disable=True, no_reset_password=True)
+            context=dict(
+                cls.env.context,
+                tracking_disable=True,
+                no_reset_password=True,
+            )
         )
         cls.product1 = cls.env.ref("product.product_product_1")
         cls.product2 = cls.env.ref("product.product_product_2")
@@ -114,7 +118,8 @@ class TestSaleOrder(TransactionCase):
         contracts = self.sale.order_line.mapped("contract_id")
         self.assertEqual(len(contracts), 2)
         self.assertEqual(
-            self.order_line1.contract_id.contract_template_id, self.contract_template1
+            self.order_line1.contract_id.contract_template_id,
+            self.contract_template1,
         )
         contract_line = self.order_line1.contract_id.contract_line_ids
         self.assertEqual(contract_line.date_start, Date.to_date("2018-01-01"))
@@ -160,7 +165,8 @@ class TestSaleOrder(TransactionCase):
         self.assertEqual(len(self.sale.order_line.mapped("contract_id")), 2)
         self.assertFalse(self.sale.need_contract_creation)
         self.assertEqual(
-            self.order_line1.contract_id.contract_template_id, self.contract_template1
+            self.order_line1.contract_id.contract_template_id,
+            self.contract_template1,
         )
         contract_line = self.order_line1.contract_id.contract_line_ids
         self.assertEqual(contract_line.date_start, Date.to_date("2018-01-01"))
@@ -179,7 +185,8 @@ class TestSaleOrder(TransactionCase):
         its product"""
         self.order_line1._compute_auto_renew()
         self.assertEqual(
-            self.order_line1.recurring_rule_type, self.product1.recurring_rule_type
+            self.order_line1.recurring_rule_type,
+            self.product1.recurring_rule_type,
         )
         self.assertEqual(
             self.order_line1.recurring_invoicing_type,
