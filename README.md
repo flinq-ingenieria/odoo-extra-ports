@@ -10,7 +10,7 @@
 - purchase_no_rfq (https://github.com/OCA/purchase-workflow 16.0)
 - account_budget_oca (https://github.com/OCA/account-budgeting 16.0)
 - resource_schedule (https://github.com/trevi-software/trevi-hr 14.0)
-- mail_server_by_user (https://github.com/OCA/social/mail_server_by_user 14.0)
+- mail_server_by_user (https://github.com/OCA/social/ 14.0)
 
 
 ### EXTRA
