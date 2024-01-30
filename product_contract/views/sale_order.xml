@@ -62,9 +62,7 @@
                 expr="//field[@name='order_line']/form//field[@name='tax_id']/parent::group"
                 position="after"
             >
-                <group>
                     <field name="is_contract" invisible="1" />
-                </group>
                 <separator
                     colspan="4"
                     string="Recurrence Invoicing"
