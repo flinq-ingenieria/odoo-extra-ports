@@ -63,7 +63,7 @@
                 position="after"
             >
                 <group>
-                    <field name="is_contract" />
+                    <field name="is_contract" invisible="1" />
                 </group>
                 <separator
                     colspan="4"
