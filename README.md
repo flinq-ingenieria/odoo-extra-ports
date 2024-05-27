@@ -13,7 +13,6 @@
 - account_invoice_download_ovh (https://github.com/OCA/edi)
 - account_invoice_import (https://github.com/OCA/edi)
 - base_business_document_import (https://github.com/OCA/edi)
-- product_contract (https://github.com/OCA/contract)
 - mail_server_by_user (https://github.com/OCA/social/)
 
 ## OCA BACKPORTS 16.0
