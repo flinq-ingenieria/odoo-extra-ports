@@ -17,7 +17,6 @@
         'data/ir_cron.xml',
         'data/email_template.xml',
         'views/resource_calendar.xml',
-        'views/hr_employee.xml'
     ],
     'installable': True,
 }
