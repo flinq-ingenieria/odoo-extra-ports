@@ -40,15 +40,13 @@ class HrAttendance(models.Model):
             end_dt = empleado_tz.localize(datetime.combine(today, datetime.max.time()))
             intervals = calendar._attendance_intervals_batch(start_dt, end_dt, resources=employee.resource_id)
 
-
             if intervals:
-                intervals = intervals[0]
+               intervals = intervals[0]
             if currently_working:
                 if intervals:
                     nearest_interval = self.get_nearest_interval(
                         intervals, employee)
                     if not nearest_interval:
-                        # Aun está en su horario por lo que pasamos al siguiente.
                         continue
                     if (datetime.now(empleado_tz) - nearest_interval[1]).seconds \
                             / 60.0 / 60.0 > 1:
@@ -56,7 +54,8 @@ class HrAttendance(models.Model):
                         # si ya ha pasado mas de 1 hora no se envia,
                         # para evitar el envio continuo de emails.
                         continue
-                self.env.ref('hr_attendance_reminder.email_template_attendance_reminder').send_mail(employee.id)
+                template_id = self.env.ref('hr_attendance_reminder.email_template_attendance_reminder')
+                template_id.send_mail(employee.id, force_send=True)
             else:
                 for interval in intervals:
                     if interval[1] < datetime.now(empleado_tz) or \
@@ -66,5 +65,6 @@ class HrAttendance(models.Model):
                             timedelta(minutes=-calendar.reminder_delay) and \
                             (datetime.now(empleado_tz) - interval[0]).seconds\
                             / 60.0 / 60.0 < 1:
-                        self.env.ref('hr_attendance_reminder.email_template_attendance_reminder').send_mail(employee.id)
+                        template_id = self.env.ref('hr_attendance_reminder.email_template_attendance_reminder')
+                        template_id.send_mail(employee.id, force_send=True)
                         break
