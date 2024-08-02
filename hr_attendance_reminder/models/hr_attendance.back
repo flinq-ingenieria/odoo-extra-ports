@@ -38,8 +38,11 @@ class HrAttendance(models.Model):
             end_dt = empleado_tz.localize(datetime.combine(today, datetime.max.time()))
             intervals = calendar._attendance_intervals_batch(start_dt, end_dt, resources=employee.resource_id)
 
+            print(intervals) #DEBUG
             if intervals:
                intervals = intervals[0]
+            print(intervals) #DEBUG
+            print(currently_working) #DEBUG
 
             if currently_working:
                 if intervals:
@@ -47,7 +50,9 @@ class HrAttendance(models.Model):
                     print(nearest_interval)
                     if not nearest_interval:
                         continue
-                    if (datetime.now(empleado_tz) - nearest_interval[1]).seconds / 60.0 / 60.0 > 1:
+                    if (datetime.now(empleado_tz) - nearest_interval[1]).seconds / 60.0 / 60.0 > 100:
+                        print(nearest_interval) #DEBUG
+                        print((datetime.now(empleado_tz) - nearest_interval[1]).seconds) #DEBUG
                         # Aunque ya se haya pasado el momento de salida, si ya ha pasado mas de 1 hora no se envia, para evitar el envio continuo de emails.
                         continue
                 template_id = self.env.ref('hr_attendance_reminder.email_template_attendance_reminder')
@@ -56,7 +61,7 @@ class HrAttendance(models.Model):
                 for interval in intervals:
                     if interval[1] < datetime.now(empleado_tz) or interval[0] > datetime.now(empleado_tz):
                         continue
-                    if interval[0] < datetime.now(empleado_tz) + timedelta(minutes=-calendar.reminder_delay) and (datetime.now(empleado_tz) - interval[0]).seconds / 60.0 / 60.0 < 1:
+                    if interval[0] < datetime.now(empleado_tz) + timedelta(minutes=-calendar.reminder_delay) and (datetime.now(empleado_tz) - interval[0]).seconds / 60.0 / 60.0 < 100:
                         template_id = self.env.ref('hr_attendance_reminder.email_template_attendance_reminder')
                         template_id.send_mail(employee.id, force_send=True)
                         break
