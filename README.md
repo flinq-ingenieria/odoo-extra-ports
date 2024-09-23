@@ -20,3 +20,6 @@
 #### FROM 16.0
 - purchase_no_rfq (https://github.com/OCA/purchase-workflow)
 - account_budget_oca (https://github.com/OCA/account-budgeting)
+
+#### FROM 17.0
+- order_invoice_manual_link (https://apps.odoo.com/apps/modules/17.0/order_invoice_manual_link)

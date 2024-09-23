@@ -1,0 +1,190 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* order_invoice_manual_link
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-23 21:32+0000\n"
+"PO-Revision-Date: 2024-09-23 23:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+
+#. module: order_invoice_manual_link
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.link_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.view_order_form
+#, fuzzy
+msgid "Add Invoices"
+msgstr "Agregar facturas"
+
+#. module: order_invoice_manual_link
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.link_invoice_view_form
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice__create_uid
+#, fuzzy
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice__create_date
+#, fuzzy
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice__sale_order_id
+#, fuzzy
+msgid "Default Sale Order"
+msgstr "Orden de venta predeterminada"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice__display_name
+#, fuzzy
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice__id
+#, fuzzy
+msgid "ID"
+msgstr "ID"
+
+#. module: order_invoice_manual_link
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.view_order_form
+#, fuzzy
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: order_invoice_manual_link
+#: code:addons/order_invoice_manual_link/wizard/link_invoice.py:0
+#, fuzzy, python-format
+msgid "Invoice contains a product not present in the Sale Order: %s"
+msgstr ""
+"La factura contiene un producto que no está presente en la Orden de Venta: "
+"%s"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice__invoice_ids
+#, fuzzy
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,help:order_invoice_manual_link.field_account_bank_statement_line__link_invoice
+#: model:ir.model.fields,help:order_invoice_manual_link.field_account_move__link_invoice
+#: model:ir.model.fields,help:order_invoice_manual_link.field_account_payment__link_invoice
+#, fuzzy
+msgid "Invoices that need to be linked"
+msgstr "Facturas que deben vincularse"
+
+#. module: order_invoice_manual_link
+#: model:ir.model,name:order_invoice_manual_link.model_account_move
+#, fuzzy
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice____last_update
+#, fuzzy
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice__write_uid
+#, fuzzy
+msgid "Last Updated by"
+msgstr "Actualizado por"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_link_invoice__write_date
+#, fuzzy
+msgid "Last Updated on"
+msgstr "Actualizado el"
+
+#. module: order_invoice_manual_link
+#: model:ir.model,name:order_invoice_manual_link.model_link_invoice
+#, fuzzy
+msgid "Link Invoice"
+msgstr "Vincular factura"
+
+#. module: order_invoice_manual_link
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.link_invoice_view_form
+#, fuzzy
+msgid "Link Invoice and Remove Invoices"
+msgstr "Vincular factura y eliminar facturas"
+
+#. module: order_invoice_manual_link
+#: code:addons/order_invoice_manual_link/wizard/link_invoice.py:0
+#, fuzzy, python-format
+msgid ""
+"Partner mismatch between Sale Order and Invoice. Please remove it to Link "
+"Invoice"
+msgstr ""
+"Discrepancia de socios entre la orden de venta y la factura. Por favor, "
+"elimínelo para vincular factura"
+
+#. module: order_invoice_manual_link
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.link_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.view_order_form
+#, fuzzy
+msgid "Payment"
+msgstr "Pago"
+
+#. module: order_invoice_manual_link
+#: model:ir.model,name:order_invoice_manual_link.model_sale_order
+#, fuzzy
+msgid "Sales Order"
+msgstr "Pedido de Ventas"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_account_bank_statement_line__link_invoice
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_account_move__link_invoice
+#: model:ir.model.fields,field_description:order_invoice_manual_link.field_account_payment__link_invoice
+#, fuzzy
+msgid "Select"
+msgstr "Seleccionar"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,help:order_invoice_manual_link.field_link_invoice__invoice_ids
+#, fuzzy
+msgid "Select the invoices you want to link to the sale order."
+msgstr "Seleccione las facturas que desea vincular al pedido de venta."
+
+#. module: order_invoice_manual_link
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.link_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.view_order_form
+#, fuzzy
+msgid "Tax Excluded"
+msgstr "Base Imponible"
+
+#. module: order_invoice_manual_link
+#: model:ir.model.fields,help:order_invoice_manual_link.field_link_invoice__sale_order_id
+#, fuzzy
+msgid "The default sale order to which the selected invoices will be linked."
+msgstr ""
+"El pedido de venta predeterminado al que se vincularán las facturas "
+"seleccionadas."
+
+#. module: order_invoice_manual_link
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.link_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.view_order_form
+#, fuzzy
+msgid "Total"
+msgstr "Total"
+
+#. module: order_invoice_manual_link
+#: model_terms:ir.ui.view,arch_db:order_invoice_manual_link.view_order_form
+#, fuzzy
+msgid "Unlink"
+msgstr "Desvincular"
