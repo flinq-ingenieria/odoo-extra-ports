@@ -392,8 +392,10 @@ class AccountInvoiceImport(models.TransientModel):
                 taxes = self._match_taxes(line.get("taxes"), parsed_inv["chatter_msg"])
                 il_vals["tax_ids"] = [(6, 0, taxes.ids)]
             if not il_vals.get("account_id") and il_vals.get("product_id"):
+                print(il_vals)
                 product = self.env["product.product"].browse(il_vals["product_id"])
-                raise UserError(
+                #raise UserError(
+                logger.warning(
                     _(
                         "Account missing on product '%s' or on it's related "
                         "category '%s'."
