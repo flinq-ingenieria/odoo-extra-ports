@@ -9,10 +9,12 @@
         <field name="model">account.journal</field>
         <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view" />
         <field name="arch" type="xml">
-            <button
-                class="btn btn-primary o_button_upload_bill oe_kanban_action_button"
-                journal_type="purchase"
-                position="attributes"
+	<button
+	    type="object"
+	    name="action_create_vendor_bill"
+	    class="btn btn-primary d-block"
+	    journal_type="purchase"
+            position="attributes"
             >
                 <attribute name="type">action</attribute>
                 <attribute name="name">%(account_invoice_import_action)d</attribute>
@@ -21,3 +23,4 @@
         </field>
     </record>
 </odoo>
+

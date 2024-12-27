@@ -237,16 +237,17 @@ class AccountInvoiceImport(models.TransientModel):
                     % journal.display_name
                 )
             journal_id = journal.id
+
         else:
-            journal_id = (
-                self.env["account.move"]
-                .with_context(
-                    default_move_type=parsed_inv["type"], company_id=company.id
-                )
-                ._get_default_journal()
-                .id
-            )
+            journal_id = self.env["account.journal"].search([
+                ('type', '=', 'purchase' if parsed_inv["type"] in ("in_invoice", "in_refund") else 'sale'),
+                ('company_id', '=', company.id)
+            ], limit=1).id
+            if not journal_id:
+                raise UserError(_("No default journal found for this type of invoice."))
+
         vals["journal_id"] = journal_id
+
 
     @api.model
     def _prepare_create_invoice_vals(self, parsed_inv, import_config):

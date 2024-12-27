@@ -21,7 +21,7 @@
                     <group name="main">
                         <field name="name" />
                         <field name="partner_id" />
-                        <field name="company_id" groups="base.group_multi_company" />
+                        <field name="company_id"/>
                         <field name="active" invisible="1" />
                     </group>
                     <group string="Accounting Parameters" name="accounting">
@@ -65,7 +65,6 @@
                 <field name="name" />
                 <field
                     name="company_id"
-                    groups="base.group_multi_company"
                     optional="show"
                 />
                 <field name="invoice_line_method" />

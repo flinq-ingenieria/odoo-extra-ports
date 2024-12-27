@@ -42,7 +42,7 @@ class AccountInvoiceImportConfig(models.Model):
     account_id = fields.Many2one(
         "account.account",
         string="Expense Account",
-        domain="[('deprecated', '=', False), ('company_id', '=', company_id)]",
+        domain="[('deprecated', '=', False)]",
         check_company=True,
     )
     account_analytic_id = fields.Many2one(
@@ -52,7 +52,7 @@ class AccountInvoiceImportConfig(models.Model):
         "account.journal",
         string="Force Purchase Journal",
         check_company=True,
-        domain="[('company_id', '=', company_id), ('type', '=', 'purchase')]",
+        domain="[('type', '=', 'purchase')]",
         help="If empty, Odoo will use the first purchase journal.",
     )
     label = fields.Char(
@@ -61,13 +61,13 @@ class AccountInvoiceImportConfig(models.Model):
     tax_ids = fields.Many2many(
         "account.tax",
         string="Taxes",
-        domain="[('type_tax_use', '=', 'purchase'), ('company_id', '=', company_id)]",
+        domain="[('type_tax_use', '=', 'purchase')]",
         check_company=True,
     )
     static_product_id = fields.Many2one(
         "product.product",
         check_company=True,
-        domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
+        #domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
 
     @api.constrains("invoice_line_method", "account_id", "static_product_id")
