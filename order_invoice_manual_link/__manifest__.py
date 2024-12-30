@@ -39,7 +39,7 @@
     'maintainer': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
     'website': 'https://www.cybrosys.com',
-    'depends': ['sale_management', 'account', 'stock_delivery'],
+    'depends': ['sale_management', 'account'],
     'data': [
         'security/ir.model.access.csv',
         'views/sale_order_views.xml',

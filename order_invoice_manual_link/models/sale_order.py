@@ -33,8 +33,7 @@ class SaleOrderLine(models.Model):
         """
         partner_invoices = self.env['account.move'].search([
             ('partner_id', '=', self.partner_id.id),
-            ('move_type', '=', 'out_invoice'),
-            ('sale_order_count', '=', 0)
+            ('move_type', '=', 'out_invoice')
         ])
         return {
             "type": "ir.actions.act_window",
