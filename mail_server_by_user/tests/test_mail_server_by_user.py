@@ -1,5 +1,6 @@
 # Copyright 2022 ForgeFlow S.L.
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+# THIS TEST REQUIRES DEMO DATA
 
 import os
 import threading
@@ -16,8 +17,8 @@ class TestIrMailServer(TransactionCase):
         super(TestIrMailServer, self).setUp()
         self.smtp_server_model = self.env["ir.mail_server"]
         self.parameter_model = self.env["ir.config_parameter"]
-        self.default_template = self.env.ref("mail.message_notification_email")
-        self.paynow_template = self.env.ref("mail.mail_notification_paynow")
+        self.default_template = self.env.ref("mail.mail_notification_layout")
+        #self.paynow_template = self.env.ref("mail.mail_notification_paynow")
         self.server_1 = self.smtp_server_model.create(
             {
                 "name": "localhost",
