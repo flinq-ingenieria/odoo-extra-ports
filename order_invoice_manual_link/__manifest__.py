@@ -21,7 +21,7 @@
 ################################################################################
 {
     'name': 'Sale Order Invoice Linker',
-    'version': '15.0.1.0.0',
+    'version': '17.0.1.0.0',
     'category': 'Extra Tools',
     'summary': 'This module designed to provide users with the ability to '
                'manually link invoices to specific sales orders',
@@ -39,7 +39,7 @@
     'maintainer': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
     'website': 'https://www.cybrosys.com',
-    'depends': ['sale_management', 'account'],
+    'depends': ['sale_management', 'account', 'stock_delivery'],
     'data': [
         'security/ir.model.access.csv',
         'views/sale_order_views.xml',
